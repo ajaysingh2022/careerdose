@@ -1,0 +1,33 @@
+@import '~antd/dist/antd.css';
+
+.d-flex {
+    display: flex!important;
+    flex:  none;
+    margin: 8px;
+    padding: 2px;
+    align-items: center;
+}
+.justify-content-between {
+    justify-content: space-between!important;
+}
+header .logo img {
+    height: 45px;
+    transition: .4s;
+}
+img, svg {
+    vertical-align: middle;
+}
+img {
+    border-style: none;
+    vertical-align: middle;
+}
+div {
+    display: block;
+}
+header .menu {
+    position: relative;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
