@@ -2,13 +2,18 @@
 
 .d-flex {
     display: flex!important;
-    flex:  none;
     margin: 8px;
     padding: 2px;
     align-items: center;
+   
+
 }
 .justify-content-between {
     justify-content: space-between!important;
+}
+a {
+    color: #0d6efd;
+    text-decoration: underline;
 }
 header .logo img {
     height: 45px;
@@ -30,4 +35,16 @@ header .menu {
 .menu{
     display: flex;
     align-items: center;
+}
+.col-lg-7 {
+    flex: 0 0 auto;
+    width: 58.333333%;
+}
+.col-md-12 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+.col-sm-12 {
+    flex: 0 0 auto;
+    width: 100%;
 }
