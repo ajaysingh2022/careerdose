@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './Component/Header/index'
 import Homepage from './Component/Homepage/index'
+import Accur from "./Component/Accup/index"
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <Homepage />
       </div>
       <div>
-        
+        <Accur />
       </div>
       
     </>
