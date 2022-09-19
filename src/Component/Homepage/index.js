@@ -7,6 +7,12 @@ import { AiOutlineArrowRight } from 'react-icons/ai';
 import Video from '../../Assets/video.mp4'
 
 const Index = () => {
+    const [value, setValue]= React.useState()
+
+    const onchange =(e)=>{
+        setValue(e.target.value)
+        console.log("kuch bhi",e.target.value);
+    }
     return (
         <>
             <div class="banner cd-danger-gradient">
@@ -24,7 +30,8 @@ const Index = () => {
                                         placeholder="Enter Phone Number"
                                         required=""
                                         pattern="[6-9]{1}[0-9]{9}"
-                                        value="6526456456"
+                                        value={value}
+                                        onChange={onchange}
                                         data-gtm-form-interact-field-id="0" />
                                     <button
                                         type="submit"
