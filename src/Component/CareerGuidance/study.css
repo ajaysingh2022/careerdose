@@ -1,0 +1,99 @@
+@import '~antd/dist/antd.css';
+
+.section1 {
+   
+    background-image: url("../../Assets/main.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo{
+   padding: 1rem;
+    margin-left: 0.3rem;
+    padding-top: 1.5rem;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.wrapper-div1 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: normal;
+}
+
+/* .abroad {
+    color: #D94D5F;
+} */
+
+.intake {
+    color: #D94D5F;
+}
+
+.admission {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.wrapper-div2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.para {
+    border: 1px solid gray;
+    margin: 0.7rem;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    
+}
+
+.form {
+    background-color: #fff;
+    padding: 1.2rem;
+    border-radius: 10px;
+    margin: 1.9rem;
+}
+
+.form-button {
+    border-radius: 10px;
+    background-color: #D94D5F;
+    color: #fff;
+}
+.form-button:hover{
+    background-color: #D94D5F;
+    color: #fff;
+    border: #D94D5F ;
+}
+.signin {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.section2 {
+    margin-top: 2rem;
+}
+
+.study-abroad {
+
+    text-align: center;
+}
+
+.row-why {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
