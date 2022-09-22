@@ -5,6 +5,8 @@ import Wlogo from '../../Assets/Windows-OS.svg';
 import Kids from '../../Assets/kids.png';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import Video from '../../Assets/video.mp4'
+import Accup from '../Accup/index'
+import Header from '../Header/index'
 
 const Index = () => {
     const [value, setValue]= React.useState()
@@ -16,7 +18,11 @@ const Index = () => {
     return (
         <>
             <div class="banner cd-danger-gradient">
+            <div>
+                    <Header />
+                </div>
                 <div class="banner-data container">
+                
                     <div class="row">
                         <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 mb-5 mb-lg-0">
                             <p class="display-4 font-weight-bold mb-4 text-white">
@@ -91,6 +97,9 @@ const Index = () => {
                     </div>
                 </div>
             </div>
+            <section>
+                <Accup />
+            </section>
         </>
     )
 }

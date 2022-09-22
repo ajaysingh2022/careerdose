@@ -1,76 +1,78 @@
-import React from 'react';
-import { Menu } from 'antd';
+import React from 'react'
+import 'antd/dist/antd.css';
+import { Menu } from 'antd'
+import { AiTwotonePhone, AiTwotoneMedicineBox, AiFillContacts } from 'react-icons/ai';
+import { FaSchool, FaGlobeEurope } from 'react-icons/fa'
+import { RiKeyboardBoxFill } from 'react-icons/ri'
 import CDlogo from '../../Assets/cd-nav-logo.svg';
-import './header.css';
 import Vlogo from '../../Assets/v_logo_full_black.svg'
-
-
-
-const Index = () => {
+import "./header.css"
+import { NavLink } from 'react-router-dom';
+import { useState } from 'react';
+const Header = () => {
     return (
         <>
-            <header className="d-flex justify-content-between">
-                <div className='"logo"'>
-                    <a href="/">
-                        <img loading="lazy" src={CDlogo} alt="Career Dose" style={{ height: "35px" }} />
+            <div className='wg-header'>
+                <div>
+                    <a href=''>
+                        <img src={CDlogo} alt="cd" style={{ height: "35px" }} />
                     </a>
                 </div>
-                <div className="menu">
+                <div>
                     <Menu mode="horizontal" defaultSelectedKeys={['mail']}>
-                        <Menu.SubMenu key="SubMenu" title="Language Course" >
-                            <Menu.Item key="two" >
+                    <Menu mode="horizontal" >
+                            <Menu.SubMenu key="SubMenu" title="Career ">
+                                <Menu.Item key="five" icon={<FaSchool />} >
+                                <span><NavLink to='/after10'  >After 10th</NavLink></span>
+                                </Menu.Item>
+                                <Menu.Item key="six" icon={<FaGlobeEurope />} >
+                                <span><NavLink to='/studyabroad'  >Study Abroad</NavLink></span>
+                                </Menu.Item>
+                                <Menu.Item key="seven" icon={<AiFillContacts />} >
+                                    Portfolio Management
+                                </Menu.Item>
+                            </Menu.SubMenu>
+                        </Menu>
+                        <Menu mode="horizontal" >
+                            <Menu.SubMenu key="SubMenu" title="Language Classes">
+                                <Menu.Item key="two" >
                                 French Language
-                            </Menu.Item>
-                            <Menu.Item key="three" >
-                                IELTS
-                            </Menu.Item>
-                            <Menu.Item key="four" >
-                                English
-                            </Menu.Item>
-
-                        </Menu.SubMenu>
+                                </Menu.Item>
+                                <Menu.Item key="three" >
+                                    IELTS
+                                </Menu.Item>
+                                <Menu.Item key="four" >
+                                    English
+                                </Menu.Item>
+                            </Menu.SubMenu>
+                        </Menu>
+                        <Menu mode="horizontal" >
+                            <Menu.SubMenu key="SubMenu" title="Exams">
+                            </Menu.SubMenu>
+                        </Menu>
+                        
+                       
+                       
+                        <Menu mode="horizontal" >
+                            <Menu.SubMenu key="SubMenu" title="More">
+                                <Menu.Item key="eight" icon={<AiTwotoneMedicineBox />} >
+                                    We Are Hiring
+                                </Menu.Item>
+                                <Menu.Item key="nine" icon={<AiTwotonePhone />} >
+                                    Contuct Us
+                                </Menu.Item>
+                                <Menu.Item key="ten" icon={<RiKeyboardBoxFill />} >
+                                    Our Branches
+                                </Menu.Item>
+                            </Menu.SubMenu>
+                        </Menu>
+                        <a href='https://vistaar.careerdose.com" target="_blank'>
+                            <img src={Vlogo} alt="vd" height="20px" />
+                        </a>
                     </Menu>
-                    <Menu mode="horizontal" defaultSelectedKeys={['mail']}>
-                        <Menu.SubMenu key="SubMenu" title="Exam" >
-                        </Menu.SubMenu>
-                    </Menu>
-                    <Menu mode="horizontal" defaultSelectedKeys={['mail']}>
-                        <Menu.SubMenu key="SubMenu" title="Career Guidance" >
-                        <Menu.Item key="five" >
-                                After 10th
-                            </Menu.Item>
-                            <Menu.Item key="six" >
-                                Study Abroad
-                            </Menu.Item>
-                            <Menu.Item key="seven" >
-                               Portfolio Management
-                            </Menu.Item>
-                        </Menu.SubMenu>
-                    </Menu>
-                    <Menu mode="horizontal" defaultSelectedKeys={['mail']}>
-                        <Menu.SubMenu key="SubMenu" title="More" >
-                        <Menu.Item key="eight" >
-                                We are Hiring
-                            </Menu.Item>
-                            <Menu.Item key="nine" >
-                                Contect Us
-                            </Menu.Item>
-                           
-                        </Menu.SubMenu>
-                    </Menu>
-                    
-                    <li class="ant-menu-item ant-menu-item-only-child" role="menuitem">
-                        <a href="https://vistaar.careerdose.com" target="_blank">
-                            <img loading="lazy" src={Vlogo} alt="Career Dose French Learning" height="20"/>
-                            </a>
-                            </li>
                 </div>
-
-            </header>
-
-
+            </div>
         </>
     )
 }
-
-export default Index
+export default Header

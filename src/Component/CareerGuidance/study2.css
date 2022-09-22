@@ -30,6 +30,26 @@
     gap: 1rem;
     /* flex-wrap: wrap; */
 }
+@media screen and (max-width:820px) {
+    .cont {
+        margin-top: 1.5rem;
+        /* display: flex; */
+        justify-content: space-between;
+        gap: 1rem;
+        /* flex-wrap: wrap; */
+    }
+    .icon {
+        /* display: grid;
+        grid-template-columns: repeat(2, 1fr); */
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+    .inner-icon {
+        background-color: rgb(243, 243, 243);
+        padding: 0.5rem;
+    
+    }
+}
 
 .icon {
     display: grid;
@@ -88,4 +108,5 @@
 .copywrite{
     text-align: center;
     margin-top: 3rem;
+    padding-bottom: 2rem;
 }

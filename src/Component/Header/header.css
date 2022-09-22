@@ -1,9 +1,9 @@
 @import '~antd/dist/antd.css';
 
-.d-flex {
+/* .d-flex {
     display: flex!important;
-    margin: 8px;
-    padding: 2px;
+  
+    padding: 0.5rem;
     align-items: center;
    
 
@@ -47,4 +47,20 @@ header .menu {
 .col-sm-12 {
     flex: 0 0 auto;
     width: 100%;
+} */
+
+.wg-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem;
+    align-items: center;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    left: 2rem;
+    box-shadow: 2px 2px 2px #AAAAAA;
+    margin: 4rem;
+    margin-top: 12px;
+    border-radius: 8px;
+    background-color: white;
 }

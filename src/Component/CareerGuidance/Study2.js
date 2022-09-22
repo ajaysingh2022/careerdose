@@ -135,10 +135,14 @@ const Study = () => {
                 </div>
                 <div className='accred-image'>
                     <div>
+                        <a href='https://aaeri.org.in/'>
                         <img src={AAERI} alt='' style={{ height: "5rem" }} />
+                        </a>
                     </div>
                     <div>
+                        <a href='https://www.airc-education.org/' >
                         <img src={Airc} alt='' style={{ height: "5rem" }} />
+                        </a>
                     </div>
                     <div>
                         <img src={Newzea} alt='' style={{ height: "5rem" }} />
