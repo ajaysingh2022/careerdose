@@ -7,6 +7,7 @@ import { AiOutlineArrowRight } from 'react-icons/ai';
 import Video from '../../Assets/video.mp4'
 import Accup from '../Accup/index'
 import Header from '../Header/index'
+import Footer from '../Footer/index'
 
 const Index = () => {
     const [value, setValue]= React.useState()
@@ -99,6 +100,9 @@ const Index = () => {
             </div>
             <section>
                 <Accup />
+            </section>
+            <section>
+                {/* <Footer /> */}
             </section>
         </>
     )
