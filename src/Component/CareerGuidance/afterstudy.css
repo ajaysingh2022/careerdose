@@ -1,0 +1,42 @@
+.form-submit{
+    display: flex;
+    justify-content: space-evenly!important;
+    align-items: center!important;
+    flex-wrap: wrap;
+    background-color: #DCEDF9;
+    padding: 8rem;
+}
+
+.d-flex{
+    display: flex;
+    justify-content: center!important;
+    align-items: center!important;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+.mb-2{
+    margin-bottom: .5rem!important;
+}
+.btn-call:hover{
+    background-color: rgb(224, 223, 223);
+
+}
+.m-0{
+    margin: 0!important;
+}
+
+.btn-call{
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    color: #212529;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    padding: .375rem .75rem;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+}

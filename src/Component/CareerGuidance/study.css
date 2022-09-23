@@ -83,6 +83,9 @@
     color: #fff;
     border: none;
     padding: 0.4rem;
+    width: 100%;
+    border: none;
+    outline: none;
 }
 .already{
     margin-top: 0.8rem;

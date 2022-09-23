@@ -151,6 +151,7 @@ const StudyAbroad = () => {
                                 </Select>
                             </Form.Item>
                             <div>
+                                <NavLink to='/studyabroad/submission'>
                                 <button className='form-button' type="submit"
                                     onClick={formSubmit}
                                     text="Meet your advisor" style={{ width: "100%" }}
@@ -159,6 +160,7 @@ const StudyAbroad = () => {
                                 >
                                     <span>Meet your Advisor</span>
                                 </button>
+                                </NavLink>
                             </div>
                         </Form>
                         <p className='already'>

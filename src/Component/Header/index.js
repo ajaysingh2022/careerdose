@@ -12,15 +12,15 @@ import { useState } from 'react';
 const Header = () => {
     return (
         <>
-            <div className='wg-header'>
+            <header className='wg-header '>
                 <div>
                     <a href=''>
                         <img src={CDlogo} alt="cd" style={{ height: "35px" }} />
                     </a>
                 </div>
                 <div>
-                    <Menu mode="horizontal" defaultSelectedKeys={['mail']}>
-                    <Menu mode="horizontal" >
+                    <Menu mode="horizontal" className='menu-section' defaultSelectedKeys={['mail']}>
+                    <Menu mode="horizontal" className='menu-section' >
                             <Menu.SubMenu key="SubMenu" title="Career ">
                                 <Menu.Item key="five" icon={<FaSchool />} >
                                 <span><NavLink to='/after10'  >After 10th</NavLink></span>
@@ -33,7 +33,7 @@ const Header = () => {
                                 </Menu.Item>
                             </Menu.SubMenu>
                         </Menu>
-                        <Menu mode="horizontal" >
+                        <Menu mode="horizontal" className='menu-section'>
                             <Menu.SubMenu key="SubMenu" title="Language Classes">
                                 <Menu.Item key="two" >
                                 French Language
@@ -46,14 +46,14 @@ const Header = () => {
                                 </Menu.Item>
                             </Menu.SubMenu>
                         </Menu>
-                        <Menu mode="horizontal" >
-                            <Menu.SubMenu key="SubMenu" title="Exams">
+                        <Menu mode="horizontal" className='menu-section'>
+                            <Menu.SubMenu key="SubMenu" className='menu-section' title="Exams">
                             </Menu.SubMenu>
                         </Menu>
                         
                        
                        
-                        <Menu mode="horizontal" >
+                        <Menu mode="horizontal" className='menu-section'>
                             <Menu.SubMenu key="SubMenu" title="More">
                                 <Menu.Item key="eight" icon={<AiTwotoneMedicineBox />} >
                                     We Are Hiring
@@ -71,7 +71,7 @@ const Header = () => {
                         </a>
                     </Menu>
                 </div>
-            </div>
+            </header>
         </>
     )
 }
