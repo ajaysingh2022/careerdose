@@ -4,6 +4,7 @@ import {BiPhoneCall} from'react-icons/bi'
 import './afterstudy.css'
 import Formsub from '../../Assets/FormSub.png'
 import Header from '../Header/index'
+import Footer from '../Footer/index'
 
 const Afterstudy = () => {
     return (
@@ -40,6 +41,9 @@ const Afterstudy = () => {
                 <div>
                     <img src={Formsub} alt='' style={{height:"20rem"}}/>
                 </div>
+            </section>
+            <section>
+                <Footer />
             </section>
 
         </>

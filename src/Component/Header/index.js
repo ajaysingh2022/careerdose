@@ -14,19 +14,19 @@ const Header = () => {
         <>
             <header className='wg-header '>
                 <div>
-                    <a href=''>
+                    <NavLink to ='/'>
                         <img src={CDlogo} alt="cd" style={{ height: "35px" }} />
-                    </a>
+                        </NavLink>
                 </div>
                 <div>
                     <Menu mode="horizontal" className='menu-section' defaultSelectedKeys={['mail']}>
                     <Menu mode="horizontal" className='menu-section' >
                             <Menu.SubMenu key="SubMenu" title="Career ">
                                 <Menu.Item key="five" icon={<FaSchool />} >
-                                <span><NavLink to='/after10'  >After 10th</NavLink></span>
+                                <span><NavLink className='text-decor' to='/after10'  >After 10th</NavLink></span>
                                 </Menu.Item>
                                 <Menu.Item key="six" icon={<FaGlobeEurope />} >
-                                <span><NavLink to='/studyabroad'  >Study Abroad</NavLink></span>
+                                <span><NavLink className='text-decor' to='/studyabroad'  >Study Abroad</NavLink></span>
                                 </Menu.Item>
                                 <Menu.Item key="seven" icon={<AiFillContacts />} >
                                     Portfolio Management

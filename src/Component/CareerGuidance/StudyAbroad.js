@@ -1,5 +1,5 @@
 import React from 'react'
-import {  Form, Input, Select } from 'antd';
+import { Form, Input, Select } from 'antd';
 import './study.css'
 import Visa from '../../Assets/visa.webp'
 import Roi from '../../Assets/roi.webp'
@@ -10,15 +10,16 @@ import Diversity from '../../Assets/diversity.webp'
 import CDlogo from '../../Assets/cd-nav-logo.svg';
 import Studysection from './Study2'
 import { NavLink } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 
 const { Option } = Select;
 const StudyAbroad = () => {
-    const [valueName, setValueName] = React.useState()
-    const [valueEmail, setValueEmail] = React.useState()
-    const [valueTel, setValueTel] = React.useState()
+    const [details, setDetails] = React.useState({ name: "", email: "", tel: "" });
+
     const [form] = Form.useForm();
 
+    // console.log("details",details);
     const onFinish = (values) => {
         console.log('Received values of form: ', values);
     };
@@ -40,19 +41,29 @@ const StudyAbroad = () => {
     );
 
     const nameChange = (e) => {
-        // console.log(e.target.value);
-        setValueName(e.target.value);
+        // console.log({...details, name:e.target.value});
+        setDetails({ ...details, name: e.target.value });
     }
     const emailChange = (e) => {
-        setValueEmail(e.target.value);
-        // console.log(e.target.value);
+        setDetails({ ...details, email: e.target.value });
+        //    console.log({...details, email:e.target.value});
     }
     const telChange = (e) => {
-        setValueTel(e.target.value);
-        console.log(e.target.value);
+        setDetails({ ...details, tel: e.target.value });
+        // console.log({...details, tel:e.target.value});
     }
     const formSubmit = (e) => {
-        console.log("prevent", e.preventDefault());
+        e.preventDefault();
+    }
+    // const onSubmit=(e)=>{
+    //     console.log("submit", e.preventDefault( ));
+    // }
+    console.log("setDetail", setDetails);
+
+    const navigate = useNavigate();
+   
+    const handleClick=()=>{
+        navigate("/studyabroad/submission")
     }
 
 
@@ -102,7 +113,7 @@ const StudyAbroad = () => {
                                     },
                                 ]}
                             >
-                                <Input placeholder="Enter Name" value={valueName} onChange={nameChange} />
+                                <Input placeholder="Enter Name" value={details.name} onChange={nameChange} />
                             </Form.Item>
                             <Form.Item
                                 name="email"
@@ -117,7 +128,7 @@ const StudyAbroad = () => {
                                     },
                                 ]}
                             >
-                                <Input placeholder="Enter Email" value={valueEmail} onChange={emailChange} />
+                                <Input placeholder="Enter Email" value={details.email} onChange={emailChange} />
                             </Form.Item>
                             <Form.Item
                                 name="phone"
@@ -134,7 +145,7 @@ const StudyAbroad = () => {
                                     style={{
                                         width: '100%',
                                     }}
-                                    value={valueTel}
+                                    value={details.tel}
                                     onChange={telChange}
                                 />
                             </Form.Item>
@@ -151,16 +162,14 @@ const StudyAbroad = () => {
                                 </Select>
                             </Form.Item>
                             <div>
-                                <NavLink to='/studyabroad/submission'>
                                 <button className='form-button' type="submit"
-                                    onClick={formSubmit}
+                                    onClick={handleClick}
                                     text="Meet your advisor" style={{ width: "100%" }}
                                     value="Submit" form='form-id'
 
                                 >
                                     <span>Meet your Advisor</span>
                                 </button>
-                                </NavLink>
                             </div>
                         </Form>
                         <p className='already'>

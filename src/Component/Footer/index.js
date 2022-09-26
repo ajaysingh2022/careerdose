@@ -1,17 +1,18 @@
 import React from 'react'
 import './footer.css'
 import { BsFacebook, BsInstagram, BsTwitter, BsTelegram } from 'react-icons/bs'
+import { NavLink } from 'react-router-dom'
 
 const Index = () => {
     return (
         <div className='footer'>
             <div className='footer-container'>
                 <div className='display-grid pt-5 mb-5 footer-data'>
-                    <div className='col-lg-4 col-md-12'>
+                    <div className=' col-md-12'>
                         <h5>Who We are</h5>
                         <p>Career Dose aims to nurture the brains of young minds. We want to create a difference when it comes. In the present era, there are so many options available for the young generation, and as they say, choices often lead to confusions. We at Career Dose put all our efforts to make our young minds confusion-free with clarity on the subject and career. We aim to help in all-around development of minds before they hit the job battlefield.</p>
                     </div>
-                    <div className='col-lg-4 col-md-6 col-sm-12'>
+                    <div className=' col-md-6 col-sm-12'>
                         <h5>Syllabus</h5>
                         <ul className='list-unstyled'>
                             <li>
@@ -41,7 +42,7 @@ const Index = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className='col-lg-4 col-md-6 col-sm-12'>
+                    <div className='  col-sm-12'>
                         <h5>About French</h5>
                         <p>Learning French with CAREER DOSE is an interactive adventure. All classes are based on a student-centered curriculum that accommodates each student’s interests and passions, giving learning the freedom to flourish.</p>
                         <a href='/language_class/french'>
@@ -50,7 +51,7 @@ const Index = () => {
                     </div>
                 </div>
                 <div className='display-grid2 pb-5 footer-data'>
-                    <div className='col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12'>
+                    <div className=' col-xs-12'>
                         <h5>Company</h5>
                         <ul className='list-unstyled'>
                             <li>
@@ -69,7 +70,7 @@ const Index = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className='col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12'>
+                    <div className=' col-xs-12'>
                         <h5>Our Branches</h5>
                         <ul className='list-unstyled'>
                             <li>
@@ -89,7 +90,7 @@ const Index = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className='col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12'>
+                    <div className='col-xs-12'>
                         <h5>What We Do</h5>
                         <ul className='list-unstyled'>
                             <li>
@@ -108,7 +109,7 @@ const Index = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className='col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12'>
+                    <div className=' col-xs-12'>
                         <h5 className='mb-4'>Get Social</h5>
                         <div className='mb-4 social-icons'>
                             <div className='icon-space cd-bg-primary'>
@@ -135,8 +136,8 @@ const Index = () => {
                     </div>
                 </div>
                 <div className='copyright text-center py-3'>
-                    <p className='m-0 small mt-2'>Copyright © 2020 All Rights Reserved |
-                        <a href='https://careerdose.com/'>Career Dose Pvt. Ltd.</a>
+                    <p className='m-0 small mt-2'>Copyright © 2020 All Rights Reserved&nbsp;|&nbsp;
+                        <NavLink to='/'>Career Dose Pvt. Ltd.</NavLink>
                     </p>
                 </div>
             </div>
