@@ -9,6 +9,7 @@ import Accup from '../Accup/index'
 import Header from '../Header/index'
 import Footer from '../Footer/index'
 
+
 const Index = () => {
     const [value, setValue]= React.useState()
 
@@ -102,7 +103,7 @@ const Index = () => {
                 <Accup />
             </section>
             <section>
-                {/* <Footer /> */}
+                <Footer />
             </section>
         </>
     )

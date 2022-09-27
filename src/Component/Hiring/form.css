@@ -1,0 +1,27 @@
+.error-message {
+    color: red;
+    font-size: 0.7rem;
+    padding: 0.3rem;
+    display: none;
+}
+input:invalid[focused="true"] {
+    border: 1px solid red;
+}
+input:invalid[focused="true"] ~ .error-message {
+    display: block;
+}
+.form-input input{
+    width: 100%;
+    border: none;
+    background-color: #ececec;
+    border-left: 0.25rem solid #f9a32a;
+    outline: none;
+    height: 2rem;
+    padding: 0.25rem 0.35rem;
+}
+.form-input input:focus{
+    background-color: #fff;
+    border-right: 0.25rem solid #f9a32a;    
+    box-shadow: 2px 2px 2px 2px #cecece;
+    padding: 0.25rem 0.35rem;
+}

@@ -8,7 +8,7 @@ import CDlogo from '../../Assets/cd-nav-logo.svg';
 import Vlogo from '../../Assets/v_logo_full_black.svg'
 import "./header.css"
 import { NavLink } from 'react-router-dom';
-import { useState } from 'react';
+
 const Header = () => {
     return (
         <>
@@ -56,7 +56,7 @@ const Header = () => {
                         <Menu mode="horizontal" className='menu-section'>
                             <Menu.SubMenu key="SubMenu" title="More">
                                 <Menu.Item key="eight" icon={<AiTwotoneMedicineBox />} >
-                                    We Are Hiring
+                                <span><NavLink className='text-decor' to='/hiring'  >We are Hiring</NavLink></span>
                                 </Menu.Item>
                                 <Menu.Item key="nine" icon={<AiTwotonePhone />} >
                                     Contuct Us
