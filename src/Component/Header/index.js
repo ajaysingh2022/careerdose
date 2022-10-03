@@ -59,7 +59,8 @@ const Header = () => {
                                 <span><NavLink className='text-decor' to='/hiring'  >We are Hiring</NavLink></span>
                                 </Menu.Item>
                                 <Menu.Item key="nine" icon={<AiTwotonePhone />} >
-                                    Contuct Us
+                                <span><NavLink className='text-decor' to='/contact'  >Contuct Us</NavLink></span>
+                                    
                                 </Menu.Item>
                                 <Menu.Item key="ten" icon={<RiKeyboardBoxFill />} >
                                     Our Branches

@@ -1,8 +1,8 @@
 import React from 'react'
-import Hiring from '../../Assets/Hiring/hiring.jpg'
+import Hiring from '../../../Assets/Hiring/hiring.jpg'
 import './hiring.css'
-import Header from '../Header/index'
-import Footer from '../Footer/index'
+import Header from '../../Header/index'
+import Footer from '../../Footer/index'
 import { InboxOutlined } from '@ant-design/icons';
 import { message, Upload } from 'antd';
 import { FaPaperPlane } from 'react-icons/fa'
@@ -38,8 +38,8 @@ const Index = () => {
         lastName: "",
         email: "",
         contact: "",
-        jobrole:"",
-        expertise:""
+        jobrole: "",
+        expertise: ""
         // link: ""
     })
 
@@ -88,7 +88,14 @@ const Index = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log("form filled", values);
-        // setValues({});
+        setValues({
+            firstName: "",
+            lastName: "",
+            email: "",
+            contact: "",
+            jobrole: "",
+            expertise: ""
+        });
     };
 
     return (
@@ -99,7 +106,7 @@ const Index = () => {
                 </div>
                 <div className='image-form-section'>
                     <div className='img-div'>
-                        <img src={Hiring} alt=''  />
+                        <img src={Hiring} alt='' />
                     </div>
                     <div>
                         <form
@@ -118,7 +125,7 @@ const Index = () => {
                             <span>
                                 <label><strong>Job Role</strong>
                                     <div>
-                                        <select id='we_r_hiring' placeholder='' onChange={(e)=>{setValues({...values,jobrole:e.target.value})}} required>
+                                        <select value={values.jobrole} id='we_r_hiring' placeholder='' onChange={(e) => { setValues({ ...values, jobrole: e.target.value }) }} required>
                                             <option value="0" selected disabled>Select Your Profession</option>
                                             <option value="subject">Subject Coach</option>
                                             <option value="sales">Sales Executive</option>
@@ -134,7 +141,7 @@ const Index = () => {
                             <span>
                                 <label><strong>Expertise Level</strong>
                                     <div>
-                                        <select placeholder='' id='we_r_hiring' onChange={(e)=>{setValues({...values,expertise:e.target.value})}} required>
+                                        <select value={values.expertise} placeholder='' id='we_r_hiring' onChange={(e) => { setValues({ ...values, expertise: e.target.value }) }} required>
                                             <option value="0" selected disabled>Select Your Expertise Level</option>
                                             <option value="fresher">Fresher</option>
                                             <option value="experienced">Experienced</option>

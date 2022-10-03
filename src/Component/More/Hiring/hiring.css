@@ -87,7 +87,7 @@
     background-color: #dad8d8;
     text-align: center;
     height: 2rem;
-    flex-wrap: wrap;
+    
 }
 
 #we_r_hiring option:disabled {
@@ -103,7 +103,6 @@
 .input-link {
     grid-column-start: 1;
     grid-column-end: 3;
-
 }
 
 .input-checkbox {
